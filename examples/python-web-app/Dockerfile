@@ -6,10 +6,10 @@ COPY requirements.txt /app
 COPY devops /app
 
 RUN apt-get install -y tzdata
-RUN apt update
+RUN apt update  && \
 # RUN apt install python3 -y
 # RUN apt install python3-pip -y
-RUN pip install -r requirements.txt 
+RUN pip install -r requirements.txt  && \
 RUN cd devops
 
 ENTRYPOINT ["python3"]
