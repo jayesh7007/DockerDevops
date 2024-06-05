@@ -16,7 +16,7 @@
 # CMD ["manage.py", "runserver", "0.0.0.0:8000"]
 
 
-FROM python:3.13.0b1-bookworm
+FROM python:3.11.1b1-bookworm
 
 WORKDIR /app
 
